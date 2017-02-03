@@ -1,0 +1,11 @@
+{
+  "name": "professorwebsite",
+  "version": "1.0.0",
+  "description": "a website for a professor",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
