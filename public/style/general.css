@@ -1,0 +1,27 @@
+#test{
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+body{
+  background-color: #d1f1f9;
+  padding-top: 65px;
+}
+.nav {
+   background-color: #d1f1f9 !important;
+   background: transparent;
+   border-color: transparent;
+}
+.nav>li>a {
+   font-size:15px;
+   color: black !important;
+}
+hr {
+    display: block;
+    height: 4px;
+    width: 80%;
+    border: 0;
+    border-top: 1px solid white;
+    margin: 0 auto;
+    padding: 0;
+}

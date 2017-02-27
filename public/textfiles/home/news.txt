@@ -1,0 +1,2 @@
+<h1>First Post Of Home</h1>
+<p>Dummy Text</p>

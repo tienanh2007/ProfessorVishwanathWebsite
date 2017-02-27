@@ -1,0 +1,68 @@
+<h1>Research</h1>
+<p>
+My lab develops optical spectroscopic and imaging methods to quantify
+ physiological, structural and metabolic properties of biological tissues
+  in living organisms ranging from humans through mice. Applications of these
+  tools include detection of cancer, providing early indicators of therapeutic
+  progress on a per-individual basis during conventional anti-cancer treatments,
+   imaging blood flow to detect peripheral artery disease or hemorrhage, and
+   assessing brain activity during cognitive tasks. Much of this research is
+   highly inter-disciplinary and brings the power of optical spectroscopy for
+   biomedical sensing. The fundamental motivation behind this work is to
+   non-invasively observe, model and understand how physics makes biology
+   work.
+</p>
+
+<span>My research interests span three realms:</span>
+<h2>1) Instrumentation development for optical sensing</h2>
+<p>
+Experimental implementations of optical techniques can be exquisitely complex
+ or quite basic, depending on the desired outcomes or needs. Simple optical
+ spectroscopic systems for routine monitoring of tissue physiology at patient
+ bedside can be assembled with small form-factors for under $5000 using
+ commercially available off-the-shelf light sources and detectors. Innovations
+ in the semi-conductor and optical communication industries might facilitate
+ building devices that would be yet more sensitive while having even more
+ smaller foot-prints, allowing optical biomedical imaging to be performed at
+ several different spatial and/or temporal scales. My goals are to improve the
+ existing platform of optical methods to increase resolution and performance
+ while in parallel, build cost-effective, simple and self-contained optical
+spectroscopic tools particularly for global health applications in cancer.
+</p>
+<h4><b><u>Ongoing projects include:</u></b></h4>
+<ul>
+<li>Imaging diffuse reflectance using an iPhone</li>
+<li>Wide-field laser speckle imaging for measuring blood flow</li>
+<li>Fiber-optic based sensing of blood flow via diffuse correlation spectroscopy</li>
+<li>Development of a low-cost autocorrelator using a Raspberry-Pi</li>
+<li>Combined fiber-optic sensor for diffuse reflectance and fluorescence spectroscopy of tissues</li>
+</ul>
+<h2>2) Applications of optical methods in human or animal studies</h2>
+<p>In cancer biology, the tumor microenvironment – specifically when cast in
+terms of its vascular network and oxygenation status - is known to modulate
+cancer growth as well as its response to administered treatments. As oxygen
+bound hemoglobin has a distinct intrinsic optical absorption spectrum, optical
+spectroscopy of tissue can directly sense blood oxygenation and tissue
+hemoglobin concentration. A couple of factors allow for the routine use of these
+ measurements in clinical and pre-clinical studies to monitor solid tumors in
+ their native environments or states.
+
+First, these measurements can be obtained quickly and easily by delivering and
+collecting light from tissue via thin, flexible fiber-optic probes. Second,
+they can be done without need for exogenous contrast, and finally they are
+virtually painless. I intend to continue my study of tumor biology using
+optical methods to measure longitudinal changes of physiological endpoints
+to determine whether they can isolate early predictors of treatment outcome.</p>
+<h2>3) Quantitative theoretical and computational tools for optical imaging and spectroscopy</h2>
+<p>The effect of light scattering in biological media leads to problems with
+direct optical imaging and with Beer’s law based approaches for estimation of
+tissue chromophore or fluorophore concentrations. Theoretical and numerical
+models of light transport in turbid media are typically implemented as
+“forward” solutions, meaning that given the optical and structural properties
+of the tissue, these models can accurately compute the signals at specified
+detectors. In practice, however, it is necessary to solve the “inverse” problem,
+ i.e. given measured signals at specific source-detector configurations, the
+ tissue optical and structural properties need to be determined. My goals are
+ to advance theoretical and computational light transport methods and models
+ while simultaneously optimize their applications in inverse problems to best
+ quantify tissue optical properties and structure.</p>
