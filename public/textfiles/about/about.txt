@@ -1,9 +1,0 @@
-<h1>Karthik Vishwanath</h1>
-<p>Assistant Professor, Department of Physics, Miami University, Oxford OH</p>
-<div>
-<img src="textfiles/about/profile.jpg">
-<p>Trained as a physicist, I develop optical spectroscopic and imaging methods
-for biomedicine and explore its translational applications. I like working
-across disciplinary boundaries and bringing a "hard sciences" based approach
-to address biomedical problems.</p>
-</div>
