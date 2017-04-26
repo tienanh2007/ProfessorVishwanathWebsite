@@ -7,8 +7,8 @@ var directory = require('serve-index');
 var gHTML = require("./generateHTML")
 var gJS = require("./generateJavascript")
 var app = express();
-gHTML.generateHTML('public/data');
-gJS.generateJavascript('public/data');
+gHTML.generateHTML('public/data', "");
+gJS.generateJavascript('data');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(directory(path.join(__dirname, 'public')));
 // take care of the main route like home, research, etc ..
@@ -26,12 +26,16 @@ app.get('/*', function(req, res, next){
 });
 
 // an API that give you the name of normal file inside public/textfiles/file
-app.get('/file',function(req,res){
-  fs.readdir('public/data/' + req.query.path, function(err, items){
+app.get('/subfolderAPI',function(req,res){
+  var path = 'public/data/' + req.query.path;
+  fs.readdir(path, function(err, items){
     if(err) return console.log(err)
     if(items){
+      items = items.filter(function(file){
+        return fs.lstatSync(path + '/' + file).isDirectory() && fs.existsSync(path + '/' + file + '/' + file + '.html');
+      })
       res.status(200).send(JSON.stringify(items));
-      console.log("access file API");
+      console.log("access subFolder API: " + path);
     }
     else{
       res.status(404).send('Not Found');

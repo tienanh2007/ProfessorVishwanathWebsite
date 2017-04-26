@@ -3,7 +3,7 @@ $(document).ready(function(){
 $('#header').load('/header.html', function(){
 $.getScript("/src/headerLoader.js");
 $.ajax({
-url: 'data/team/team.html',
+url: 'data/harro/hare/hare.html',
 type: 'GET',
 success: (data) => {
 console.log(data)
