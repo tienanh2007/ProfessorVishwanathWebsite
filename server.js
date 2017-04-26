@@ -10,7 +10,6 @@ var app = express();
 gHTML.generateHTML('public/data', "");
 gJS.generateJavascript('data');
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(directory(path.join(__dirname, 'public')));
 // take care of the main route like home, research, etc ..
 app.get('/*', function(req, res, next){
   var url = req.path;
