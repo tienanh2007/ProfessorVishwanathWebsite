@@ -34,7 +34,7 @@ module.exports  = {
             '<title>Karthik Vishwanath | ' + item + '</title>\n' +
             '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">\n' +
             '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>\n' +
-            '<script type="text/javascript" src="/src/' + item + '.js" charset="utf-8"></script>\n' +
+            '<script type="text/javascript" src="src/' + item + '.js" charset="utf-8"></script>\n' +
             '</head>\n'+
               '<body>\n'+
                 '<div id="header">\n'+
@@ -42,7 +42,7 @@ module.exports  = {
                 '<hr/>\n'+
                 '<div class="banner" id="banner1">\n' +
                 '</div>\n'+
-                '<div id="test">\n'+breadcrumb+
+                '<div id="test">\n' + fs.readFileSync(path + '/' + item + '/' + item + '.html') + '\n'+breadcrumb+
                 '</div>\n'+
               '</body>\n'+
             '</html>';

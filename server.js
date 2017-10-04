@@ -6,9 +6,11 @@ var fs = require("fs");
 var directory = require('serve-index');
 var gHTML = require("./generateHTML")
 var gJS = require("./generateJavascript")
+var gHD = require("./generateHeader");
 var app = express();
 gHTML.generateHTML('public/data', "");
 gJS.generateJavascript('data');
+gHD.generateHeader();
 app.use(express.static(path.join(__dirname, 'public')));
 // take care of the main route like home, research, etc ..
 app.get('/*', function(req, res, next){
