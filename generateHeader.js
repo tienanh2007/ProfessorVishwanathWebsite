@@ -18,7 +18,7 @@ module.exports  = {
     '<div class="navbar-header">\n'+
     '</div>\n'+
     '<ul class="nav navbar-nav">\n'+
-    '<li><a href="/">Home</a></li>\n';
+    '<li><a href="index.html">Home</a></li>\n';
     order.forEach(function(folderName){
       var path = 'public/data/' + folderName;
       items = fs.readdirSync(path);
