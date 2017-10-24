@@ -7,7 +7,7 @@ module.exports  = {
       return;
     }
     fs.readdir(path, function(err, items){
-      if(err) return console.log(err)
+      if(err) return console.log(err);
       items = items.filter(function(file){
         return fs.lstatSync(path + '/' + file).isDirectory() && fs.existsSync(path + '/' + file + '/' +file + '.html');
       })

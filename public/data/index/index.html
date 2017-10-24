@@ -38,3 +38,19 @@ CMSB students already at Miami seeking research labs, please contact Dr. Vishwan
 <h5>Visitor count</h5>
 <img src="//www.easycounter.com/counter.php?kkblore,mu" border="0" alt="HTML Counter">
 </section>
+<div id='pictures'><button id='shuffle'>change</button></div>
+<script>
+const pictures = ['resources/AdamEaton.JPG','resources/Anthony Young.jpg','resources/Lindsay Darkins.jpg','resources/Sara.jpg','resources/Vinoin.jpg','resources/miamiLogo.png','resources/physics.png'];
+function getPicture(num) {
+var pic = pictures.slice();
+var ret = [];
+for(var i=0;i<num;i++) {
+ret.push(...pic.splice(Math.floor(Math.random()*pic.length), 1));
+}
+return ret;
+}
+$('#shuffle').click(() => {
+pic = getPicture(4);
+for(i=0;i<4;i++) $('#pictures').append('<img src='+ pic[i] +'>');
+});
+</script>
