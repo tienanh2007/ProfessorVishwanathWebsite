@@ -5,13 +5,14 @@ This is a website written using nodejs, express for server code and jquery for c
 This file generate HTML files for to serve what is in /public/data folder
 ## generateJS.js
 This file generate JS files for to serve what is in /public/data folder
-## public/data 
-This folder contains data that will be automatically generate
-## public/special
-This folder contains pages that are special and cannot be automatically generated from raw data and instead, will have it own html and js files manually-written.
-## public/resource
-This folder contains resources like images.
-## public/style
-This folder contains css files
+## generateHeader.js
+This file generate the header which is based on what is in /public/data folder
 ## server.js
-This is server source code written using express
+This run the 3 files above which generate all the needed static file to put on the server.
+
+## How to generate file
+
+1. put data in the /public/data folder (the data is a folder with one html file with the same name that contains all the content. Example in the source code)
+2. In the generateHeader.js, you *have to* specify all the folder you have in an array so that the order can be determine inside the header.
+3. Run server.js which generate all the html files inside /public, all the javascript client files in /public/src.
+4. Copying /public into your MyDisk folder for your website.
