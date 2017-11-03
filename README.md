@@ -2,7 +2,7 @@
 This is a website written using nodejs, express for server code and jquery for client.
 
 ## generateHTML.js
-This file generate HTML files for to serve what is in /public/data folder
+This file generate HTML files for to serve what is in /public/data folder \n
 The function parameter: gHTML.generateHTML(path, parent);
 path: path of the data folder
 parent: always leave empty string
