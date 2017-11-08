@@ -4,7 +4,7 @@ module.exports  = {
     fs.readdir(path, function(err, items){
       if(err) return console.log(err);
         items = items.filter((item) => item.charAt(0) != '.')
-                      .map((item) => 'resources/' + item);
+                      .map((item) => path.substring(path.indexOf('/')+1) + (path[path.length-1] === '/' ? '' : '/') + item);
         data = "<div id='pictures'></div>\n" +
         "<script>\n" +
           "const pictures = ['" + items.join("','") + "'];\n" +

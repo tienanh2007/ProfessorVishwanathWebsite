@@ -1,8 +1,83 @@
-#test{
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
+a {
+	font-style: normal;
 }
+section {
+	text-align: justify;
+	padding: 5px 0px 0px 0px;
+}
+h4 {
+	padding: 5px 0px 5px 0px;
+	text-align:left;
+	color: rgb(0,10,200);
+	font-weight: 600;
+	text-decoration: underline;
+	font-style: normal;
+	display: block;
+}
+.pagesections {
+	padding: 0px 0px 20px 0px;
+	text-align:justif;
+	color: rgb(40,110,40);
+	font-weight: 600;
+	/*text-decoration: underline;*/
+	font-style: normal;
+	font-variant: small-caps;
+	font-size: 1.4em;
+	letter-spacing: 0.1em;
+}
+.pagesubsections {
+	padding: 20px 0px 5px 0px;
+	text-align:left;
+	color: rgb(40,50,70);
+	font-weight: 600;
+	/*text-decoration: underline;*/
+	font-style: oblique;
+	font-variant: small-caps;
+	font-size: 1em;
+	letter-spacing: 0.04em;
+}
+.articletitle{
+  margin: auto;
+  text-align: left;
+	color: black;
+	font-style: italic;
+	display: inline;
+}
+.journaltitle{
+	text-decoration: underline;
+	display: inline;
+	font-style: normal;
+}
+.articledate{
+	color: black;
+	font-weight: 600;
+	display: inline;
+	font-style: normal;
+}
+.headerText{
+	color: yellow;
+	font-weight: 600;
+	/*display: inline;*/ /*uncomment this if you want this to float next to the physics banner*/
+	font-size: 1.8em;
+	font-variant: small-caps;
+	text-shadow: 1px 1px white;
+	text-align: center;
+}
+
+#text_default{
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+.cell{
+    position: relative;
+    width: 100%;
+   /* min-height: 22px;*/
+    text-align: center;
+    display: block;
+}
+
 body{
   background-color: #eae9d3;
 }
@@ -11,8 +86,25 @@ body{
   padding: 1% 10% 1% 10%
 }
 .headerLogo{
-  padding: 0% 10% 0% 10%;
+  padding: 0% 0% 0% 10%;
 }
+.labmembers{
+	text-align:left;
+	color: rgb(100,20,100);
+	font-weight: 700;
+	font-style: normal;
+	font-size: 1.3em;
+}
+.pagetoptext{
+	text-align:left;
+	color: rgb(80,80,200);
+	font-weight: 700;
+	font-style: normal;
+	font-size: 1em;
+	text-decoration: underline;
+}
+
+
 .container-fluid::before{
   background-color: #eae9c8;
   content: '';
@@ -42,22 +134,22 @@ body{
 }
 .nav>li>a {
    font-size:15px;
-   color: white !important;
+   color: yellow !important;
 }
 hr {
-    display: block;
-    height: 4px;
-    width: 80%;
-    border: 0;
-    border-top: 1px solid white;
-    margin: 0 auto;
-    padding: 0;
+		display: block;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
+		margin-left: auto;
+		margin-right: auto;
+		border-style: inset;
+		border-width: 1px;
 }
 ul.nav li.dropdown:hover > ul.dropdown-menu{
-    display: block;
+    display: inline-block;
 }
 li.dropdown-submenu:hover > ul.dropdown-menu{
-  display: block;
+  display: inline-block;
 }
 .dropdown-submenu {
     position: relative;
