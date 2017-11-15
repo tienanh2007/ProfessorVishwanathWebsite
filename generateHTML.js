@@ -22,15 +22,6 @@ module.exports  = {
           subItems = subItems.filter(function(subFile){
             return fs.lstatSync(path + '/' + item + '/' + subFile).isDirectory() && fs.existsSync(path + '/' + item + '/' + subFile + '/' + subFile + '.html');
           });
-          var breadcrumb = '';
-          if(parent.length != 0){
-            breadcrumb += '<ol class="breadcrumb">';
-            parent.split("/").forEach(function(dir){
-              if(dir.length != 0) breadcrumb += '<li><a href="/' + dir + '">' + dir + '</a></li>';
-            });
-            breadcrumb += '<li class="active">' + item + '</li>';
-            breadcrumb += '</ol>';
-          }
 
           var data = '<!--an auto generated file-->\n<!DOCTYPE html>\n<html lang="en"><head>\n<meta charset="UTF-8">' +
             '<title>Karthik Vishwanath | ' + item + '</title>\n' +
@@ -44,7 +35,7 @@ module.exports  = {
                 '<hr/>\n'+
                 '<div class="banner" id="banner1">\n' +
                 '</div>\n'+
-                '<div id="text_default">\n' + fs.readFileSync(path + '/' + item + '/' + item + '.html') + '\n'+breadcrumb+
+                '<div id="text_default">\n' + fs.readFileSync(path + '/' + item + '/' + item + '.html') + '\n'+
                 '</div>\n'+
               '</body>\n'+
             '</html>';
