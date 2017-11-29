@@ -12,7 +12,7 @@ var gWG = require("./widget");
 gHTML.generateHTML('public/data', "");
 gJS.generateJavascript('data');
 gHD.generateHeader();
-gWG.generateWidget('public/resources', 4, 100, 100);
+gWG.generateWidget('public/resources/', 4, 100, 100);
 // app.use(express.static(path.join(__dirname, 'public')));
 // // take care of the main route like home, research, etc ..
 // app.get('/*', function(req, res, next){
